@@ -118,3 +118,22 @@ header nav a:hover{
 header .navigation{
     text-align: right;
 }
+
+.nome-anime{
+    font-size: 20px;
+    text-decoration: none;
+    color: antiquewhite;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;;
+    padding-left: 10%;
+}
+.nome-anime:hover{
+    color: whitesmoke;
+    
+}
+
+.item:hover{
+    background: linear-gradient(rgba(236, 120, 43, 0.5),rgba(236,120,43.50)100%);
+    background-color: whitesmoke;   
+}
