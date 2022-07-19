@@ -70,18 +70,20 @@ header nav a:hover{
 .botao{
     background-color: rgba(0,0,0,.50) ;
     border: none;
-    color: antiquewhite;
+    color: var(--Laranja);
     padding: 15px 30px;
-    margin-right: 15px;
+    margin-left: 30px;
     font-size: 12px;
     cursor: pointer;
     transition: .4s ease all;
     margin-bottom: 10%;
+    text-decoration: none;
+    
 }
 
 .botao:hover{
-    background-color: whitesmoke;
-    color: var(--Preto);
+    background-color: var(--Laranja);
+    color: antiquewhite;
 }
 
 .botao i{
@@ -137,3 +139,13 @@ header .navigation{
     background: linear-gradient(rgba(236, 120, 43, 0.5),rgba(236,120,43.50)100%);
     background-color: whitesmoke;   
 }
+
+.nome-anime-principal{
+    font-size: 12px;
+    text-decoration: none;
+    color: antiquewhite;
+    flex-direction: row;
+    cursor: pointer;;
+}
+.nome-anime-principal:hover{
+    color: whitesmoke;
