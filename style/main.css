@@ -1,23 +1,23 @@
-:root{
-    --Laranja:#e96b11;
-    --Preto:#0f0e0e;
+:root {
+    --Laranja: #e96b11;
+    --Preto: #0f0e0e;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /*Elementos Base*/
-body{
+body {
     background-color: var(--Preto);
     font-family: 'Times New Roman';
     color: whitesmoke;
 }
 
 
-header .container-fluid{
+header .container-fluid {
     display: flex;
     flex-direction: row;
     color: whitesmoke;
@@ -25,29 +25,57 @@ header .container-fluid{
     justify-content: space-between;
 }
 
-header .logo{
+header .logo {
     margin-left: 5px;
     color: var(--Laranja);
     font-family: 'arial black';
     font-size: 40px;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
     color: antiquewhite;
-    margin-right: 10px ;
+    margin-right: 10px;
 }
 
-header nav a:hover{
+header nav a:hover {
     color: whitesmoke;
 }
 
+.navigation i{
+    color: antiquewhite;
+    background-color: #e96b11;
+    border-radius: 50%;
+    padding: 5px 5px;
+    justify-content: center;
+    align-items: center;
+    height: 23px 23px;
+    cursor: pointer;
+}
+
+.search-txt{
+    align-items: center;
+    border: none;
+    background: none;
+    margin: 0px;
+    padding-left: 10px;
+    color: antiquewhite;
+    width: 0px;
+    transition: .3s ease all;
+    outline: none;
+}
+
+
+.navigation:hover > .search-txt{
+    width: 130px;
+    transition: .3s ease all;
+}
 
 /*filme principal*/
-.anime-principal{
+.anime-principal {
     font-size: 25px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0.50)100%), url(/img/OnePiece/OnePieceCapa.jpg);
-    
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0.50)100%), url(/img/OnePiece/OnePieceCapa.jpg);
+
     height: 70%;
     background-size: cover;
 
@@ -56,19 +84,20 @@ header nav a:hover{
     justify-content: center;
     align-items: flex-start;
 }
-.anime-principal .descricao{
+
+.anime-principal .descricao {
     margin-top: 15px;
     margin-bottom: 40px;
 }
 
-.titulo{
+.titulo {
     margin-top: 20%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.botao{
-    background-color: rgba(0,0,0,.50) ;
+.botao {
+    background-color: rgba(0, 0, 0, .50);
     border: none;
     color: var(--Laranja);
     padding: 15px 30px;
@@ -78,74 +107,77 @@ header nav a:hover{
     transition: .4s ease all;
     margin-bottom: 10%;
     text-decoration: none;
-    
+
 }
 
-.botao:hover{
+.botao:hover {
     background-color: var(--Laranja);
     color: antiquewhite;
 }
 
-.botao i{
+.botao i {
     margin-right: 8px;
 }
 
-.container{
+.container {
     margin-left: 20px;
 }
 
-.anime-principal .container{
+.anime-principal .container {
     width: 70%;
 }
 
-.box-anime{
+.box-anime {
     height: 100%;
     width: 100%;
     display: block;
 }
 
 
-.carrosel-animes{
+.carrosel-animes {
     margin-top: 5px;
     cursor: pointer;
 }
 
-.series{
+.series {
     font-size: 40px;
     font-family: 'arial black';
     text-align: center;
     background-color: rgb(31, 29, 29);
 }
 
-header .navigation{
+header .navigation {
     text-align: right;
 }
 
-.nome-anime{
+.nome-anime {
     font-size: 20px;
     text-decoration: none;
     color: antiquewhite;
-    flex-direction: row;
+    display: flex;
     align-items: center;
-    cursor: pointer;;
-    padding-left: 10%;
+    cursor: pointer;
+    justify-content: center;
 }
-.nome-anime:hover{
+
+.nome-anime:hover {
     color: whitesmoke;
-    
+
 }
 
-.item:hover{
-    background: linear-gradient(rgba(236, 120, 43, 0.5),rgba(236,120,43.50)100%);
-    background-color: whitesmoke;   
+.item:hover {
+    background: linear-gradient(rgba(236, 120, 43, 0.5), rgba(236, 120, 43.50)100%);
+    background-color: whitesmoke;
 }
 
-.nome-anime-principal{
+.nome-anime-principal {
     font-size: 12px;
     text-decoration: none;
     color: antiquewhite;
     flex-direction: row;
-    cursor: pointer;;
+    cursor: pointer;
 }
-.nome-anime-principal:hover{
+
+.nome-anime-principal:hover {
     color: whitesmoke;
+}
